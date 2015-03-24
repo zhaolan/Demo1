@@ -1,0 +1,186 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "../libs/_icon-font";
+
+$font-blue: blue;
+$font-size: 4em;
+$font-weight: 700;
+
+html {
+
+	body {
+		width: 100%;
+        font-size: 14px;
+        margin: 0 auto;
+        text-align: -webkit-center;
+
+		header {
+			color: #fff;
+			text-align: center;
+			background: url(../images/background.jpg) no-repeat;
+			background-size: 100% auto;
+			padding: 20px 50px 100px;
+
+			.buttons {
+				text-align:right;
+				span {
+					padding: 5px 10px;
+					font-size: 14px;
+				}
+			}
+
+			.title {
+				font-size: 20px;
+				font-weight: bolder;
+				margin: 50px auto 10px;
+			}
+
+			.sub_title {
+				font-size: 14px;
+			}
+
+			.search_wrap {
+				padding: 20px;
+				input {
+				  border: none;
+				  border-radius: 2px;
+				  line-height: 35px;
+				  width: 40%;
+				}
+
+				.search_button {
+				  line-height: 37px;
+  				  border-radius: 2px;
+				  background-color: #8BE87A;
+				  margin-left: -80px;
+				  width: 80px;
+				  display: inline-block;
+				}
+				
+			}
+		}
+
+		.content {
+			background-color: #F4F3F1;
+			position:relative;
+            padding: 40px 50px;
+			.table-wrap {
+				position: absolute;
+				top: -40px;
+				left: 15%;
+				background-color: #F4F3F1;
+				width: 70%;
+				height: 80px;
+				display: flex;
+				text-align: center;
+				border: 1px solid #ccc;
+				border-radius: 2px;
+				.column-wrap {
+					width:25%;
+					border-left: 1px solid #ccc;
+					margin-left: -1px;
+					padding: 10px 0;
+
+					.main-data {
+						line-height: 40px;
+  						font-size: 18px;
+					}
+
+					.sub-data {
+						line-height: 20px;
+					}
+				}
+			}
+            .detail {
+                margin-top: 40px;
+                .detail_list {
+                    padding: 70px 0px;
+                    border-bottom: 1px solid #ccc;
+
+                    .detail_title {
+                        font-size: 18px;
+                        font-weight: bolder;
+                        margin-bottom: 20px;
+                    }
+
+
+                    .detail_content {
+                        display: flex;
+                        position: relative;
+
+                        .detail_item {
+                            width: 33.3%;
+                            padding: 0 30px;
+                            &:before {
+                                content: " ";
+                                height: 1px;
+                                width: 33%;
+                                position: absolute;
+                                top: 25px;
+                                background-color: #ddd;
+                                z-index: 1;
+                            }
+                            
+                            &:last-child {
+                                &:before {
+                                    background-color: transparent;
+                                }
+                            }
+
+                            .detail_icon {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 25px;
+                                border: 1px solid #DDD;
+                                margin-bottom: 30px;
+                                background-color: #F4F3F1;
+                                z-index: 3;
+                            }
+                            .icon {
+                                font-size: 40px;
+                            }
+
+                            .main-data {
+                                line-height: 40px;
+                                font-size: 16px;
+                                color: #999;
+                            }
+
+                            .sub-data {
+                                color: #ccc;
+                            }
+                        }
+                    }
+                    .detail_content_two{
+                        display: flex;
+                        position: relative;
+
+                        .detail_item {
+                            width: 50%;
+                            padding: 0 30px;
+                        }
+
+
+                    }
+
+                }
+            }
+		}
+	}
+}
+
+.light_border {
+	border: 1px solid #fff;
+}
+
+.orange {
+    color: #EAA861;
+}
+
+.purple {
+    color: #AD9ED1;
+}
+
+.blue {
+    color: #519AC9;
+}
